@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        
+        <div class="container">
+            <div class="leftContainer">                 
+                <header>
+                    <h1 class="logo">
+                        <img src="./img/logo.png">
+                    </h1> 
+                </header>
+             
+                <textarea id="input" placeholder="Ingrese el texto aqui"></textarea> 
+                <div class="warningContainer">
+                    <img id="warningIcon" src="./img/icon.png"> 
+                    <p>&nbsp Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="buttonsContainer">
+                    <button id="btnEncriptar" type="button">Encriptar</button>
+                    <button id="btnDesencriptar"type="button">Desencriptar</button> 
+                </div>                    
+            </div>
+   
+            <div class="rightContainer">
+                <textarea id="output" readonly></textarea>   
+                <div class="content">
+                    <img src="./img/picture.png">
+                    <p id="notfound"><strong>Ningún mensaje fue encontrado</strong></p>
+                    <p id="note">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+        </div>
+    
+        <footer>
+            <div class="footerContainer">
+                <p>
+                    Alura &copy2022 - Challenge ONE Principiante en programación. Developed by Lucía Aliaga.
+                </p>
+            </div>
+            
+        </footer>
+    </body>
+
+    
+
+</html>
