@@ -22,24 +22,24 @@
                     </h1> 
                 </header>
              
-                <textarea id="input" placeholder="Ingrese el texto aqui"></textarea> 
+                <textarea class="text-area" placeholder="Ingrese el texto aqui"></textarea> 
                 <div class="warningContainer">
                     <img id="warningIcon" src="./img/icon.png"> 
                     <p>&nbsp Solo letras minúsculas y sin acentos</p>
                 </div>
                 <div class="buttonsContainer">
-                    <button id="btnEncriptar" type="button">Encriptar</button>
-                    <button id="btnDesencriptar"type="button">Desencriptar</button> 
+                    <button class="btnEncriptar" type="button" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btnDesencriptar"type="button"  onclick= "btnDesencriptar()"">Desencriptar</button> 
                 </div>                    
             </div>
    
             <div class="rightContainer">
-                <textarea id="output" readonly></textarea>   
-                <div class="content">
-                    <img src="./img/picture.png">
+                <textarea class="mensaje" readonly></textarea>   
+                <div class="content" id="text-content-notfound">
                     <p id="notfound"><strong>Ningún mensaje fue encontrado</strong></p>
                     <p id="note">Ingresa el texto que desees encriptar o desencriptar.</p>
                 </div>
+                <button class="btnCopiar" id="copiar" type="button" onclick="copy()">Copiar</button>
             </div>
         </div>
     
@@ -51,8 +51,7 @@
             </div>
             
         </footer>
+
+    <script src="./js/script.js"></script>
     </body>
-
-    
-
 </html>

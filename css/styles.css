@@ -31,7 +31,7 @@ header{
     width: 31.09px;
 }
 
-#input{
+.text-area{
     width: 680px;
     height: 580px;
     padding: 40px;
@@ -45,18 +45,18 @@ header{
     color: #0A3871;
 }
 
-#input::placeholder{
+.text-area::placeholder{
     font-family: 'Inter', sans-serif;
     font-size: 32px;
     font-weight: 400;
     color: #0A3871;
 }
 
-#input:focus {
+.text-area:focus {
     outline: none;
 }
 
-#input:focus::placeholder{
+.text-area:focus::placeholder{
     color: #CED4DA;
 }
 
@@ -85,7 +85,7 @@ header{
     width: 100%;
 }
 
-#btnEncriptar{
+.btnEncriptar{
     display: flex;
     flex-direction: row;
     padding: 24px;
@@ -108,13 +108,13 @@ header{
     color: #FFFFFF;
 }
 
-#btnEncriptar:hover{
+.btnEncriptar:hover{
     border-color: #052051;
     background: #052051;
     cursor:pointer;
 }
 
-#btnDesencriptar{
+.btnDesencriptar{
     display: flex;
     flex-direction: row;
     padding: 24px;
@@ -138,7 +138,7 @@ header{
     
 }
 
-#btnDesencriptar:hover{
+.btnDesencriptar:hover{
     border-color: #0A3871;
     background: #D8DFE8;
     cursor:pointer;
@@ -157,19 +157,31 @@ header{
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 }
 
-#output{
+.mensaje{
     display: flex;
     border-style: none;
     resize: none;
+    height: 200px;
+    padding: 20px;
+    margin: 20px;
+    border-style: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #0A3871;
+    background-image: url("../img/picture.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }
-
-#output:focus {
+   
+.mensaje:focus {
     outline: none;
 }
 
 .content{
     width: 100%;
-    padding: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
     text-align: center;
     font-family: 'Inter', sans-serif;
 }
@@ -199,6 +211,37 @@ header{
     align-self: stretch;
     flex-grow: 0;
     margin: 16px;
+}
+
+.btnCopiar{
+    display: flex;
+    flex-direction: row;
+    padding: 24px;
+    margin: 10px;
+    width: 328px;
+    height: 67px;
+    background: #F3F5FC;
+    border-radius: 24px;
+    border-width: 1px;
+    border-color: #0A3871;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    justify-content: center;
+    color: #0A3871;
+    float: inline-end;
+    visibility: hidden;
+}
+
+.btnCopiar:hover{
+    border-color: #0A3871;
+    background: #D8DFE8;
+    cursor:pointer;
 }
 
 footer{
