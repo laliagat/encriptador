@@ -1,13 +1,30 @@
 const textArea = document.querySelector(".text-area");
 const mensaje = document.querySelector(".mensaje");
 
+function validar(stringEncriptada){
+    let arreglo = ["á", "é", "í", "ó", "ú"]; 
+    stringEncriptada  = stringEncriptada.toLowerCase();
+    for(let i=0; i<arreglo.length; i++){ 
+        if (stringEncriptada.includes(arreglo[i])){
+            alert("El texto ingresado contiene tildes");
+            return false;
+        }
+        else return true;
+    }
+
+}
+
 function btnEncriptar(){
-    const textoEncriptado = encriptar(textArea.value);
-    mensaje.value = textoEncriptado;
-    textArea.value = "";
-    mensaje.style.backgroundImage = "none";
-    document.getElementById("text-content-notfound").style.visibility = "hidden";
-    document.getElementById("copiar").style.visibility = "visible";
+    
+    let validacion = validar(textArea.value); 
+    if (validacion){
+        const textoEncriptado = encriptar(textArea.value);
+        mensaje.value = textoEncriptado;
+        textArea.value = "";
+        mensaje.style.backgroundImage = "none";
+        document.getElementById("text-content-notfound").style.visibility = "collapse";
+        document.getElementById("copiar").style.visibility = "visible";
+    }
 }
 
 function encriptar(stringEncriptada){
